@@ -1,0 +1,31 @@
+import productData from "./productdetail.jsx";
+import { useState} from "react";
+import { useEffect} from "react";
+import Nav from "./nav.jsx";
+import "./profile.css";
+
+function Product1(){
+    const [data, setData] = useState([]);
+    const [add, setAdd] = useState("Add to cart");
+    // useEffect(()=>setData(productData.filter((val)=>val.category==="kids")),[]);
+    return(<>
+        <Nav />
+        <br />
+        <div className="productType">
+        {data.map((res,index)=>{
+            return( 
+            <div style={{marginLeft:"22px", marginTop:"20px"}} className="ten">
+            <h4 style={{textAlign:"center"}}>{data[index].name}</h4>
+            <img src={data[index].image} alt="" height="240px" width="240px"/>
+            <p style={{textAlign:"center", color:"green", fontWeight:"bold"}}>Price:{data[index].offerprice}</p>
+            <p style={{textAlign:"center", color:"red"}}>Original Price:<span style={{textDecoration:"line-through"}}>{data[index].orginalPrize}</span></p>
+            <button type="button" style={{textAlign:"center", fontWeight:"bold", marginLeft:"35%", padding:"5px", border:"0", borderRadius:"5px"}}>{add}</button>
+            </div>);
+            }
+        )}
+        </div>
+        </>
+        );
+}
+
+export default Product1;

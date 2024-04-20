@@ -1,0 +1,34 @@
+{
+  "registers": [
+    {
+      "Full name": " Kumar",
+      "Email": "abcdshanthi234@gmail.com",
+      "Password": "123456789",
+      "id": "85e4"
+    },
+    {
+      "id": "57e8",
+      "fullname": "Senthil Kumar",
+      "email": "senthilshanthi234@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "8cfe",
+      "fullname": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "7580",
+      "fullname": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "ce2e",
+      "fullname": "",
+      "email": "",
+      "password": ""
+    }
+  ]
+}
